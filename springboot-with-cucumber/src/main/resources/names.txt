@@ -1,0 +1,8 @@
+firstName,lastName,age
+subodh,kumar,30
+juli,kumari,24
+bindiya,kumari,20
+akash,kumar,22
+harsh,sharma,5
+deeksha,sharma,11
+nidhi,kumari,7
