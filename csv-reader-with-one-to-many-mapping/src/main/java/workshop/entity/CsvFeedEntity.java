@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class CsvFeed {
+public class CsvFeedEntity {
 
     @Id
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
@@ -24,8 +24,8 @@ public class CsvFeed {
     private LocalDateTime timestamp;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "csvFeed", orphanRemoval = true, fetch = FetchType.EAGER)
-    private List<Address> addressList;
+    private List<AddressEntity> addressList;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "csvFeed", orphanRemoval = true, fetch = FetchType.EAGER)
-    private List<Employee> employeeList;
+    private List<EmployeeEntity> employeeList;
 }

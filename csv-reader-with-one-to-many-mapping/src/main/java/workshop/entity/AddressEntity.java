@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Address {
+public class AddressEntity {
 
     @Id
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
@@ -50,5 +50,5 @@ public class Address {
 
     @ManyToOne
     @JoinColumn(name = "feed_id")
-    private CsvFeed csvFeed;
+    private CsvFeedEntity csvFeedEntity;
 }

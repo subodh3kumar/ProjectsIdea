@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 
 @Data
 @Entity
-public class Employee {
+public class EmployeeEntity {
 
     @Column(name = "first_name")
     private String firstName;
@@ -31,5 +31,5 @@ public class Employee {
 
     @ManyToOne
     @JoinColumn(name = "feed_id")
-    private CsvFeed csvFeed;
+    private CsvFeedEntity csvFeed;
 }

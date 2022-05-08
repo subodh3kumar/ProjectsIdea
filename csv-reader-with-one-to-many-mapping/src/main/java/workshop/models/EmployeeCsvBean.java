@@ -1,10 +1,10 @@
-package workshop.records;
+package workshop.models;
 
 import com.opencsv.bean.CsvBindByName;
 import lombok.Data;
 
 @Data
-public class Employee {
+public class EmployeeCsvBean {
     @CsvBindByName(column = "firstname", required = true)
     private String firstName;
 
